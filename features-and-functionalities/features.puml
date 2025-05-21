@@ -1,0 +1,42 @@
+@startmindmap
+skinparam monochrome false
+skinparam BackgroundColor #f5f5f5
+skinparam Shadowing true
+skinparam ArrowColor DarkSlateGray
+skinparam defaultTextAlignment center
+
+* <b><color:DarkBlue>Airbnb Clone Backend Features</color></b>
+** <color:DarkBlue>User Authentication</color>
+*** Sign Up
+*** Login
+*** Logout
+*** Password Reset
+** <color:DarkBlue>Property Management</color>
+*** Create Listing
+*** Update Listing
+*** Delete Listing
+*** View Listings
+** <color:DarkBlue>Booking System</color>
+*** Search Properties
+*** Check Availability
+*** Make Booking
+*** Cancel Booking
+*** View Bookings
+** <color:DarkBlue>Payment System</color>
+*** Add Payment Method
+*** Make Payment
+*** View Payment History
+*** Refunds
+** <color:DarkBlue>User Profile</color>
+*** View Profile
+*** Edit Profile
+*** Upload Avatar
+** <color:DarkBlue>Reviews & Ratings</color>
+*** Leave Review
+*** Edit/Delete Review
+*** View Host/Property Reviews
+** <color:DarkBlue>Admin Panel</color>
+*** Manage Users
+*** Manage Listings
+*** View System Logs
+@endmindmap
