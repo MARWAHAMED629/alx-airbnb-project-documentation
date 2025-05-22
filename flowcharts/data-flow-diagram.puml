@@ -1,0 +1,42 @@
+@startuml
+title Property Booking Workflow
+
+start
+
+:User logs in;
+:User searches for available properties;
+
+:Display property listings;
+
+:User selects a property;
+:Check availability for selected dates;
+
+if (Is property available?) then (Yes)
+    :User enters booking details;
+    :Validate booking data;
+
+    if (Is data valid?) then (Yes)
+        :Initiate payment process;
+        :Process payment through gateway;
+
+        if (Payment successful?) then (Yes)
+            :Create booking record in the database;
+            :Send booking confirmation to user;
+            :Notify host of new booking;
+            :Return success response;
+            stop
+        else (No)
+            :Display error:\n"Payment failed";
+            stop
+        endif
+
+    else (No)
+        :Display validation errors;
+        stop
+    endif
+
+else (No)
+    :Display error:\n"Property not available for selected dates";
+    stop
+endif
+@enduml
